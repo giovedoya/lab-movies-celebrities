@@ -1,10 +1,8 @@
-<h2>Add celebrities</h2>
-<form method="POST" action="/celebrities/create">
-    <label> Celebrities </label>
-    <input type="text" name="name">
-    <label> Occupation </label>
-    <input type="text" name="occupation">
-    <label> catchPhrase </label>
-    <input type="text" name="catchPhrase">
-    <button type="submit">Created</button>
-</form>
+<h1>All the celebrities</h1>
+<div>
+    {{#each celebrity}}
+        <p>{{name}}</p>
+        <p>{{occupation}}</p>
+        <p>{{catchPhrase}}</p>
+    {{/each}}
+</div>
